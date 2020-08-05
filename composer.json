@@ -1,0 +1,29 @@
+{
+    "name": "flatorb/gamification",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "flatorb",
+            "email": "flatorb@yourdomain.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+                "Flatorb\\Gamification\\": "src/"
+            }
+        },
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Flatorb\\Gamification\\GamificationServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
