@@ -20,6 +20,12 @@ class CreateGamificationAchievementTypesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
+
+        \Flatorb\Gamification\Models\AchievementType::insert([
+          ['name' => 'Level', 'Description' => 'Ex: Silver member'],
+          ['name' => 'Badge', 'Description' => 'Ex: Top Rated Developer'],
+          ['name' => 'Reward', 'Description' => 'Ex: $25 gift card']
+        ]);
     }
 
     /**
