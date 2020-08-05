@@ -2,6 +2,8 @@
     "name": "flatorb/gamification",
     "description": "Add gamification to Laravel with points, reputation, member levels, and badges.",
     "type": "library",
+    "keywords": ["gamification", "laravel", "points", "membership", "badges", "flatorb"],
+    "homepage": "https://www.flatorb.com",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +16,9 @@
                 "Flatorb\\Gamification\\": "src/"
             }
         },
-    "require": {},
+    "require": {
+        "php": "^7.1"
+    },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
