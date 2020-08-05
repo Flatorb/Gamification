@@ -1,12 +1,12 @@
 {
     "name": "flatorb/gamification",
-    "description": "",
+    "description": "Add gamification to Laravel with points, reputation, member levels, and badges.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "flatorb",
-            "email": "flatorb@yourdomain.com"
+            "email": "support@flatorb.com"
         }
     ],
     "autoload": {
