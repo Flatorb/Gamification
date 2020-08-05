@@ -2,14 +2,12 @@
 
 namespace Flatorb\Gamification;
 
-use Flatorb\Gamification\Models\User;
+use Flatorb\Gamification\Models\AchievementType;
 
 class Gamification
 {
-    public function greet()
+    public static function achievementTypes()
     {
-        $user = User::first();
-
-        return "{$user->name} - Hello World - {$user->dummy}";
+        return AchievementType::get();
     }
 }
