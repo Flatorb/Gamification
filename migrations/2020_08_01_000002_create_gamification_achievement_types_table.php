@@ -14,7 +14,7 @@ class CreateGamificationAchievementTypesTable extends Migration
     public function up()
     {
         Schema::create('gamification_achievement_types', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
             $table->timestamps();

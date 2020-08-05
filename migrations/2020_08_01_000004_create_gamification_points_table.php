@@ -14,7 +14,7 @@ class CreateGamificationPointsTable extends Migration
     public function up()
     {
         Schema::create('gamification_points', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->integer('user_id');
             $table->integer('points')->default(0);
             $table->text('description')->nullable();
