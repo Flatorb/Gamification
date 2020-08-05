@@ -17,13 +17,13 @@
             }
         },
     "require": {
-        "php": "^7.1"
+        "php": "^7.2"
     },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Flatorb\\Gamification\\GamificationServiceProvider"
+                "Flatorb\\Gamification\\Providers\\GamificationServiceProvider"
             ],
             "aliases": {
 
