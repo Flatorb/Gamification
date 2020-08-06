@@ -17,8 +17,8 @@ class CreateGamificationAchievementsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('type_id');
-            $table->string('goal');
-            $table->integer('goal_value');
+            $table->string('goal')->nullable();
+            $table->integer('goal_value')->nullable();
             $table->string('icon')->nullable();
             $table->json('meta')->nullable();
             $table->timestamps();

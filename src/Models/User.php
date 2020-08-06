@@ -6,9 +6,14 @@ use App\User as LaravelUser;
 
 class User extends LaravelUser
 {
-    public function getDummyAttribute()
+    public function badges()
     {
-        return 'Dummy';
+        return $this->belongsToMany('Flatorb\Gamification\Models\Achievement', 'gamification_badge_user');
+    }
+
+    public function level()
+    {
+        return $this->belongsTo('Flatorb\Gamification\Models\Achievement', 'membership_level_id', 'id');
     }
 
     public function points()
