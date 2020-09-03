@@ -15,6 +15,7 @@ class CreateGamificationInvitationTable extends Migration
     {
         Schema::create('gamification_invitations', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('name');
             $table->string('email');
             $table->timestamp('sent_at')->nullable();
