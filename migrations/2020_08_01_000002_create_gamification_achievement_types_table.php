@@ -24,7 +24,8 @@ class CreateGamificationAchievementTypesTable extends Migration
         \Flatorb\Gamification\Models\AchievementType::insert([
           ['name' => 'Level', 'Description' => 'Ex: Silver member'],
           ['name' => 'Badge', 'Description' => 'Ex: Top Rated Developer'],
-          ['name' => 'Reward', 'Description' => 'Ex: $25 gift card']
+          ['name' => 'Reward', 'Description' => 'Ex: $25 gift card'],
+          ['name' => 'Discount', 'Description' => 'Ex: $10 or 10% off something']
         ]);
     }
 
