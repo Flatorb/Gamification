@@ -42,4 +42,11 @@ class Gamification
     {
         return User::with(['points', 'badges'])->get();
     }
+
+    public static function userBadges($user_id)
+    {
+        $user = User::findOrFail($user_id);
+
+        return $user->badges;
+    }
 }
