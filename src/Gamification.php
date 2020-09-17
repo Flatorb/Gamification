@@ -38,9 +38,9 @@ class Gamification
         return Points::givePoints($user_id, $points, $description);
     }
 
-    public static function users()
+    public static function user($user_id)
     {
-        return User::with(['points', 'badges'])->get();
+        return User::findOrFail($user_id);
     }
 
     public static function userBadges($user_id)
@@ -48,5 +48,24 @@ class Gamification
         $user = User::findOrFail($user_id);
 
         return $user->badges;
+    }
+
+    public static function userPoints($user_id)
+    {
+        $user = User::findOrFail($user_id);
+
+        return $user->points;
+    }
+
+    public static function userPointsTotal($user_id)
+    {
+        $user = User::findOrFail($user_id);
+
+        return $user->points->sum('points');
+    }
+
+    public static function users()
+    {
+        return User::with(['points', 'badges'])->get();
     }
 }
