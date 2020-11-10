@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGamificationInvitationTable extends Migration
+class CreateGamificationInvitationsTable extends Migration
 {
     /**
      * Run the migrations.
