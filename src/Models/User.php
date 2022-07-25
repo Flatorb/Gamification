@@ -2,7 +2,7 @@
 
 namespace Flatorb\Gamification\Models;
 
-use App\User as LaravelUser;
+use App\Models\User as LaravelUser;
 
 class User extends LaravelUser
 {
